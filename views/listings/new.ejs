@@ -1,0 +1,40 @@
+<% layout('layouts/boilerplate') %>
+<div class ="row">
+    <div class="col-md-12 offset-md-3"></div>
+        <h2 class="text-center mb-4">Create a new Listing</h2>
+    </div>
+</div>
+<body>
+    <form method="POST" action="/listings"
+    class="col-md-6 offset-md-3">
+     <div class="mb-2">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" name="listing[title]" class="form-control" id="title" placeholder="enter title" aria-describedby="titleHelp">
+     </div>
+     <div class="mb-2">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" class="form-control" id="description" rows="2"></textarea>
+     </div>
+     <div class="mb-2">
+        <label for="image" class="form-label">Image URL</label>
+        <input type="text" name="listing[image]" class="form-control" id="image" placeholder="enter image URL/link" aria-describedby="imageHelp">
+     </div>
+     <div class="row">
+        <div class="mb-2 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" name="listing[price]" class="form-control" placeholder="enter price" id="price" aria-describedby="priceHelp">
+     </div>
+    <div class="mb-2 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" name="listing[country]" class="form-control" id="country" placeholder="enter country" aria-describedby="countryHelp">
+     </div></div>
+     <div class="mb-2">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" name="listing[location]" class="form-control" id="location" placeholder="enter location" aria-describedby="locationHelp">
+     </div>
+     <div class="mb-2">
+        <button type="submit" class="btn btn-dark">Create</button>
+     </div>
+    </form>
+</body>
+</html>

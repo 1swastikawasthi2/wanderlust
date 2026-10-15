@@ -1,0 +1,77 @@
+body{
+    font-family:"Plus-jakarta-sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom:0;
+}
+.container{
+    flex: 1;
+}
+.navbar .navbar-brand i{
+    color: rgb(202, 64, 14) !important;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-links a{
+    color: #222222;
+    gap: 1rem;
+    text-decoration: none;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    display: flex;
+    height:8rem;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+}
+.f-info-social{
+    width: 100%;
+}
+.f-info-links{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    border: none !important;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    height: 100% !important;
+
+
+}
+.card-img-top{
+    width: 100% !important;
+    border-radius: 1rem;
+}
+.card-body{
+    padding:0rem;
+    margin-top:0rem;
+}
+.card-text{
+    font-weight: 500 !important;
+
+}
+.a{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: white;
+}
